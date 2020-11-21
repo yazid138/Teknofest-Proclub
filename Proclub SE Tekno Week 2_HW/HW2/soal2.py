@@ -47,13 +47,13 @@ klubB = input('Klub B : ')
 
 while cek:
     hitung += 1
-    print(f'Pertandingan {hitung} : ', end='')
     # inisialisasi input dan rubah ke int
-    skor_string = input().split()
+    skor_string = input(f'Pertandingan {hitung} : ').split()
+    # mengubah data_skor dari str ke int ke variabel skor
     skor = [int(i) for i in skor_string]
     # masukkan skor ke list
     data_skor.append(skor)
-    # ambil nilai datanya
+    # ambil nilai datanya dari skor
     for i in skor:
         data = i
         # cek apakah skor terdapat minus
